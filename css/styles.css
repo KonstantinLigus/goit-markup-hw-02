@@ -43,13 +43,24 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-second-color);
 }
+.current {
+  color: var(--text-third-color);
+}
 .link:hover,
-.link:focus {
+.link:focus,
+.footer-link:hover,
+.footer-link:focus,
+.logo:hover,
+.logo:focus {
   color: var(--text-third-color);
   text-decoration: underline;
 }
-.mail-tel {
+.mail-tel-color {
   color: var(--text-first-color);
+}
+.underline:hover,
+.underline:focus {
+  text-decoration: underline var(--text-third-color) 3px;
 }
 .hero {
   font-weight: 900;
