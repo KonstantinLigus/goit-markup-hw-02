@@ -11,34 +11,18 @@ background-color: #F5F4FA;; (секция Наша команда)
 background: #2F303A; (Футер)
 */
 :root {
-  --header-bg-color: #ffffff;
+  --header-bg-hero-color: #ffffff;
   --footer-hero-bg-color: #2f303a;
-  --sec-bg-color: #e5e5e5;
   --text-first-color: #757575;
   --text-second-color: #212121;
   --text-third-color: #2196f3;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  color: var(--text-first-color);
 }
 .header {
-  background-color: var(--header-bg-color);
-}
-.hero {
-  background-color: var(--footer-hero-bg-color);
-}
-.sec-bg-color {
-  background-color: var(--sec-bg-color);
-}
-.our-team {
-  background-color: #f5f4fa;
-}
-.footer {
-  background-color: var(--footer-hero-bg-color);
-}
-li {
-  list-style-type: none;
+  background-color: var(--header-bg-hero-color);
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -51,7 +35,7 @@ li {
 .logo-accent {
   color: var(--text-third-color);
 }
-.nav a {
+.link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -59,24 +43,87 @@ li {
   letter-spacing: 0.02em;
   color: var(--text-second-color);
 }
-.nav a:hover,
-.nav a:focus,
-.mail-tel a:hover,
-.mail-tel a:focus {
+.link:hover,
+.link:focus {
   color: var(--text-third-color);
+  text-decoration: underline;
 }
-.mail-tel a {
+.mail-tel {
   color: var(--text-first-color);
 }
-h1 {
+.hero {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--header-bg-color);
+  color: var(--header-bg-hero-color);
+  background-color: var(--footer-hero-bg-color);
 }
-address .address {
-  color: var(--header-bg-color);
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--header-bg-hero-color);
+  background-color: var(--text-third-color);
+}
+.our-advantages h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-second-color);
+}
+.our-advantages p,
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.what-we-do h2,
+.our-team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-second-color);
+}
+.our-team {
+  background-color: #f5f4fa;
+}
+.our-team h3,
+.our-team p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-second-color);
+}
+.our-team p {
+  font-weight: 400;
+  color: var(--text-first-color);
+}
+.footer {
+  background-color: var(--footer-hero-bg-color);
+}
+.footer-link {
+  cursor: pointer;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--text-first-color);
+}
+.address {
+  color: var(--header-bg-hero-color);
+}
+.logo-accent-studio {
+  color: var(--header-bg-hero-color);
 }
