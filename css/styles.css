@@ -7,15 +7,17 @@ color: #2196F3; (Третий цвет шрифта)
 background-color: #FFFFFF; (header)
 background-color: #2F303A; (секция Заголовок страницы)
 background-color: #E5E5E5; (секции Особенности компаниии, Чем мы занимаемся)
-background-color: #F5F4FA;; (секция Наша команда)
+background-color: #F5F4FA; (секция Наша команда)
 background: #2F303A; (Футер)
 */
+/* Studio */
 :root {
   --header-bg-hero-color: #ffffff;
   --footer-hero-bg-color: #2f303a;
   --text-first-color: #757575;
   --text-second-color: #212121;
   --text-third-color: #2196f3;
+  --text-fourth-color: #f5f4fa;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -111,7 +113,8 @@ body {
   background-color: #f5f4fa;
 }
 .our-team h3,
-.our-team p {
+.our-team p,
+.button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -137,4 +140,31 @@ body {
 }
 .logo-accent-studio {
   color: var(--header-bg-hero-color);
+}
+
+/* Portfolio */
+
+.button {
+  font-family: inherit;
+  font-style: normal;
+  cursor: pointer;
+  line-height: 1.63;
+  background-color: var(--text-fourth-color);
+}
+.button:hover {
+  color: var(--text-fourth-color);
+  background-color: var(--text-third-color);
+}
+.exemple {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-second-color);
+}
+.type-exemple {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--text-first-color);
 }
