@@ -12,7 +12,8 @@ background: #2F303A; (Футер)
 */
 /* Studio */
 :root {
-  --header-bg-hero-color: #ffffff;
+  --header-hero-color: #ffffff;
+  --text-fifth-color: #ffffff;
   --footer-hero-bg-color: #2f303a;
   --text-first-color: #757575;
   --text-second-color: #212121;
@@ -24,7 +25,7 @@ body {
   color: var(--text-first-color);
 }
 .header {
-  background-color: var(--header-bg-hero-color);
+  background-color: var(--header-hero-color);
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -60,7 +61,7 @@ body {
 .mail-tel-color {
   color: var(--text-first-color);
 }
-.underline:hover,
+.underline:hover,  /* сделал подчеркивание только в Studio */
 .underline:focus {
   text-decoration: underline var(--text-third-color) 3px;
 }
@@ -71,7 +72,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--header-bg-hero-color);
+  color: var(--header-hero-color);
   background-color: var(--footer-hero-bg-color);
 }
 .hero-button {
@@ -83,7 +84,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: var(--header-bg-hero-color);
+  color: var(--header-hero-color);
   background-color: var(--text-third-color);
 }
 .our-advantages h3 {
@@ -136,10 +137,10 @@ body {
   color: var(--text-first-color);
 }
 .address {
-  color: var(--header-bg-hero-color);
+  color: var(--text-fifth-color);
 }
 .logo-accent-studio {
-  color: var(--header-bg-hero-color);
+  color: var(--text-fifth-color);
 }
 .visually-hidden {
   position: absolute;
