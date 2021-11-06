@@ -33,6 +33,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--text-second-color);
 }
 .logo-accent {
@@ -56,14 +57,9 @@ body {
 .logo:hover,
 .logo:focus {
   color: var(--text-third-color);
-  text-decoration: underline;
 }
 .mail-tel-color {
   color: var(--text-first-color);
-}
-.underline:hover,  /* сделал подчеркивание только в Studio */
-.underline:focus {
-  text-decoration: underline var(--text-third-color) 3px;
 }
 .hero {
   font-weight: 900;
@@ -87,7 +83,7 @@ body {
   color: var(--header-hero-color);
   background-color: var(--text-third-color);
 }
-.our-advantages h3 {
+.advantages-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -95,14 +91,13 @@ body {
   text-transform: uppercase;
   color: var(--text-second-color);
 }
-.our-advantages p,
+.advantages-text,
 .footer-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.what-we-do h2,
-.our-team h2 {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -113,9 +108,9 @@ body {
 .our-team {
   background-color: #f5f4fa;
 }
-.our-team h3,
-.our-team p,
-.button {
+.our-team-title,
+.our-team-text,
+.exemples-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -123,7 +118,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-second-color);
 }
-.our-team p {
+.our-team-text {
   font-weight: 400;
   color: var(--text-first-color);
 }
@@ -160,25 +155,25 @@ body {
 
 /* Portfolio */
 
-.button {
+.exemples-button {
   font-family: inherit;
   font-style: normal;
   cursor: pointer;
   line-height: 1.63;
   background-color: var(--text-fourth-color);
 }
-.button:hover {
+.exemples-button:hover {
   color: var(--text-fourth-color);
   background-color: var(--text-third-color);
 }
-.exemple {
+.galery-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-second-color);
 }
-.type-exemple {
+.galery-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
